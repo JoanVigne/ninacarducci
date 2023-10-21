@@ -82,6 +82,7 @@ body {
   font-size: 30px;
 }
 .about-me__introduction {
+  font-size: 1rem;
   font-family: "Spectral", serif;
   font-weight: 800;
   font-style: italic;
@@ -256,7 +257,7 @@ input[type="submit"] {
     margin-top: 0;
     margin-bottom: 1em;
   }
-  #about-me h6,
+  #about-me h3,
   #about-me p {
     width: 100%;
   }
