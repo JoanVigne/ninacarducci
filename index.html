@@ -2,6 +2,10 @@
 <html lang="fr">
   <head>
     <meta charset="UTF-8" />
+    <meta
+      name="description"
+      content="Site vitrine de Nina Carducci, Photographe professionnel !"
+    />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./assets/bootstrap/bootstrap.min.css" />
     <link rel="stylesheet" href="./assets/style.css" />
@@ -23,7 +27,10 @@
               class="social-link"
               href="https://www.instagram.com/ninacarducci.photo/?hl=fr"
               target="_blank"
-              ><img src="assets/images/instagram.png" alt="instagram logo"
+              ><img src="assets/images/instagram.png" alt="instagram logo" />
+              <meta
+                itemprop="sameAs"
+                content="https://www.instagram.com/ninacarducci.photo/"
             /></a>
           </li>
         </ul>
@@ -132,54 +139,63 @@
             class="gallery-item"
             src="./assets/images/gallery/concerts/aaron-paul-wnX-fXzB6Cw-unsplash.webp"
             alt="salle de concert"
+            loading="lazy"
           />
           <img
             data-gallery-tag="Entreprises"
             class="gallery-item"
             src="./assets/images/gallery/entreprise/ali-morshedlou-WMD64tMfc4k-unsplash.webp"
             alt="business man"
+            loading="lazy"
           />
           <img
             data-gallery-tag="Entreprises"
             class="gallery-item"
             src="./assets/images/gallery/entreprise/jason-goodman-tHO1_OuKbg0-unsplash.webp"
             alt="femme riant"
+            loading="lazy"
           />
           <img
             data-gallery-tag="Mariages"
             class="gallery-item"
             src="./assets/images/gallery/mariage/hannah-busing-RvF2R_qMpRk-unsplash.webp"
             alt="quatre mains tendues"
+            loading="lazy"
           />
           <img
             data-gallery-tag="Portrait"
             class="gallery-item"
             src="./assets/images/gallery/portraits/ade-tunji-rVkhWWZFAtQ-unsplash.webp"
             alt="portrait homme ébloui"
+            loading="lazy"
           />
           <img
             data-gallery-tag="Mariages"
             class="gallery-item"
             src="./assets/images/gallery/mariage/jakob-owens-SiniLJkXhMc-unsplash.webp"
             alt="Jeunes mariés riant"
+            loading="lazy"
           />
           <img
             data-gallery-tag="Portrait"
             class="gallery-item"
             src="./assets/images/gallery/portraits/nino-van-prattenburg - 443cl1uR_8-unsplash.webp"
             alt="Jeune femme"
+            loading="lazy"
           />
           <img
             data-gallery-tag="Concert"
             class="gallery-item"
             src="./assets/images/gallery/concerts/austin-neill-hgO1wFPXl3I-unsplash.webp"
             alt="Concert chanteur au micro"
+            loading="lazy"
           />
           <img
             data-gallery-tag="Entreprises"
             class="gallery-item"
             src="./assets/images/gallery/entreprise/mateus-campos-felipe-Fsgzm8N0hIY-unsplash.webp"
             alt="Femme souriante devant ordinateur"
+            loading="lazy"
           />
         </div>
       </div>
@@ -188,10 +204,10 @@
       <figure>
         <blockquote>
           <h2 class="quote__text">
-            Un portrait n’est pas une ressemblance. Dès lors qu’une émotion ou
+            "Un portrait n’est pas une ressemblance. Dès lors qu’une émotion ou
             qu’un fait est traduit en photo, il cesse d’être un fait pour
             devenir une opinion. L’inexactitude n’existe pas en photographie.
-            Toutes les photos sont exactes. Aucune d’elles n’est la vérité.
+            Toutes les photos sont exactes. Aucune d’elles n’est la vérité."
           </h2>
         </blockquote>
         <figcaption class="quote__author">- Richard Avedon</figcaption>
@@ -247,9 +263,9 @@
       <figure>
         <blockquote>
           <h2 class="quote__text">
-            De manière inconsciente, je crois, je guette un regard, une
+            "De manière inconsciente, je crois, je guette un regard, une
             expression, des traits ou une nostalgie capable de résumer ou plus
-            exactement de révéler une vie
+            exactement de révéler une vie"
           </h2>
         </blockquote>
         <figcaption class="quote__author">- Richard Avedon</figcaption>
@@ -281,10 +297,37 @@
           </form>
         </div>
         <div class="picture right">
-          <img src="./assets/images/camera.webp" alt="Appareil photo" />
+          <img
+            src="./assets/images/camera.webp"
+            alt="Appareil photo"
+            loading="lazy"
+          />
         </div>
       </div>
     </section>
+    <footer>
+      <h2>Ou me trouver?</h2>
+      <ul>
+        <li
+          itemprop="address"
+          itemscope
+          itemtype="http://schema.org/PostalAddress"
+        >
+          Au <span itemprop="streetAddress">68 avenue Alsace-Lorraine</span>,
+          <span itemprop="addressLocality">Bordeaux</span>,
+          <span itemprop="addressRegion">Nouvelle-Aquitaine</span>,
+          <span itemprop="postalCode">33200</span>
+        </li>
+        <li itemprop="telephone">
+          Par téléphone au <span itemprop="telephone">05 56 67 78 89</span>
+        </li>
+        <li itemprop="openingHours">
+          Je réponds du lundi au vendredi de
+          <span itemprop="startTime">10:00</span> à
+          <span itemprop="endTime">19:00</span>.
+        </li>
+      </ul>
+    </footer>
   </body>
   <script src="./assets/bootstrap/bootstrap.bundle.min.js"></script>
   <script
