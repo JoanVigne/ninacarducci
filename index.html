@@ -28,10 +28,7 @@
               href="https://www.instagram.com/ninacarducci.photo/?hl=fr"
               target="_blank"
               ><img src="assets/images/instagram.png" alt="instagram logo" />
-              <meta
-                itemprop="sameAs"
-                content="https://www.instagram.com/ninacarducci.photo/"
-            /></a>
+            </a>
           </li>
         </ul>
       </nav>
@@ -179,7 +176,7 @@
           <img
             data-gallery-tag="Portrait"
             class="gallery-item"
-            src="./assets/images/gallery/portraits/nino-van-prattenburg - 443cl1uR_8-unsplash.webp"
+            src="./assets/images/gallery/portraits/nino-van-prattenburg-443cl1uR_8-unsplash.webp"
             alt="Jeune femme"
             loading="lazy"
           />
@@ -308,33 +305,44 @@
     <footer>
       <h2>Ou me trouver?</h2>
       <ul>
-        <li
-          itemprop="address"
-          itemscope
-          itemtype="http://schema.org/PostalAddress"
-        >
-          Au <span itemprop="streetAddress">68 avenue Alsace-Lorraine</span>,
-          <span itemprop="addressLocality">Bordeaux</span>,
-          <span itemprop="addressRegion">Nouvelle-Aquitaine</span>,
-          <span itemprop="postalCode">33200</span>
+        <li>
+          Au <span>68 avenue Alsace-Lorraine</span>, <span>Bordeaux</span>,
+          <span>Nouvelle-Aquitaine</span>,
+          <span>33200</span>
         </li>
-        <li itemprop="telephone">
-          Par téléphone au <span itemprop="telephone">05 56 67 78 89</span>
-        </li>
-        <li itemprop="openingHours">
+        <li>Par téléphone au <span>05 56 67 78 89</span></li>
+        <li>
           Je réponds du lundi au vendredi de
-          <span itemprop="startTime">10:00</span> à
-          <span itemprop="endTime">19:00</span>.
+          <span>10:00</span> à <span>19:00</span>.
         </li>
       </ul>
     </footer>
+    <script src="./assets/bootstrap/bootstrap.bundle.min.js"></script>
+    <script
+      src="https://code.jquery.com/jquery-3.4.1.min.js"
+      integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+      crossorigin="anonymous"
+    ></script>
+    <script src="./assets/maugallery.js"></script>
+    <script src="./assets/scripts.js"></script>
+    <script type="application/ld+json">
+      {
+        "@context": "http://schema.org",
+        "@type": "Person",
+        "name": "Nina Carducci",
+        "url": "https://www.instagram.com/ninacarducci.photo/",
+        "sameAs": ["https://www.instagram.com/ninacarducci.photo/"],
+        "description": "Photographe professionnel spécialisé dans la capture d'émotions et de moments précieux.",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "68 avenue Alsace-Lorraine",
+          "addressLocality": "Bordeaux",
+          "addressRegion": "Nouvelle-Aquitaine",
+          "postalCode": "33200"
+        },
+        "telephone": "05 56 67 78 89",
+        "openingHours": "Mo-Fr 10:00-19:00"
+      }
+    </script>
   </body>
-  <script src="./assets/bootstrap/bootstrap.bundle.min.js"></script>
-  <script
-    src="https://code.jquery.com/jquery-3.4.1.min.js"
-    integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
-    crossorigin="anonymous"
-  ></script>
-  <script src="./assets/maugallery.js"></script>
-  <script src="./assets/scripts.js"></script>
 </html>
